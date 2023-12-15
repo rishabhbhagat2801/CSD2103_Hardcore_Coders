@@ -100,3 +100,14 @@ body {
 	background-color: currentColor;
 	transition: transform .2s ease-out;
 }
+.switcher-login .underline::before {
+	transform: translateX(101%);
+}
+
+.switcher-signup .underline::before {
+	transform: translateX(-101%);
+}
+
+.form-wrapper.is-active .underline::before {
+	transform: translateX(0);
+}
