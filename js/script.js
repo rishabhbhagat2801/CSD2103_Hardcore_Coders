@@ -174,3 +174,22 @@ menu.onclick = () =>{
       },
     },
   });
+//Form validation
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.querySelector('.contact form');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const name = document.querySelector('input[type="text"]').value.trim();
+
+    if (name === '') {
+      alert('Please enter your name.');
+      return;
+    }
+
+    // If all validations pass, you can submit the form here
+    // form.submit();
+    alert('Form submitted successfully!');
+  });
+
+});
