@@ -1,0 +1,53 @@
+let menu = document.querySelector('#menu-btn');
+let header = document.querySelector('.header');
+
+const PRODUCTS = [
+  {
+    name:"nike Running Shoes",
+    description:`Very comnfortable in wearing and available in many sizes. Sole with
+    a cushion and no chances of shoe bites.`,
+    img:"images/product-img1.jpg",
+    price:49.99
+  },
+  {
+    name:"nike jordan",
+    description:`Very funky in style and looks dope with any outfit. Comfortable in
+    wearing. Becomes an attraction and stands you out and the shoe in
+    itself has a different vibe.`,
+    img:"images/product-img2.jpg",
+    price:150.99
+  },
+  {
+    name:"nike air 2",
+    description:`Good pair of shoes for daily wear and has net for the inflow of air.
+    It also has a good grip while running and on wet surfaces. Available
+    in all sizes.`,
+    img:"images/product-img3.jpg",
+    price:90.99
+  },
+  {
+    name:"nike basketball basics",
+    description:`Engineered for performance, these shoes offer superior support,
+    traction, and comfort, elevating your game on the court.`,
+    img:"images/product-img4.jpg",
+    price:39.99
+  },
+  {
+    name:"nike mids",
+    description:`Designed for versatility, these shoes combine ankle support with
+    agility, providing stability without compromising movement. With
+    sleek style and enhanced comfort, they're a perfect fit for everyday
+    wear or active pursuits.`,
+    img:"images/product-img5.jpg",
+    price:49.99
+  },
+  {
+    name:"swiper-slide slide",
+    description:`Embrace style and visibility with these luminous sneakers, designed
+    to illuminate your steps with a vibrant glow, ensuring both
+    fashion-forward looks and enhanced visibility in low-light
+    conditions.`,
+    img:"images/product-img6.jpg",
+    price:100.99
+  }
+]
