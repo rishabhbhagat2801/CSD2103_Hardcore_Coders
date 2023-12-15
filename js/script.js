@@ -208,6 +208,11 @@ document.addEventListener("DOMContentLoaded", function() {
       alert('Please enter a valid phone number.');
       return;
     }
+
+    if (message === '') {
+      alert('Please enter your message.');
+      return;
+    }
     
     // If all validations pass, you can submit the form here
     // form.submit();
