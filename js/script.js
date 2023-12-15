@@ -187,6 +187,10 @@ document.addEventListener("DOMContentLoaded", function() {
       return;
     }
 
+    if (email === '') {
+      alert('Please enter your email.');
+      return;
+    }
     // If all validations pass, you can submit the form here
     // form.submit();
     alert('Form submitted successfully!');
