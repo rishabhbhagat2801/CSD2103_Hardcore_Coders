@@ -191,6 +191,12 @@ document.addEventListener("DOMContentLoaded", function() {
       alert('Please enter your email.');
       return;
     }
+
+    // Basic email validation
+    if (!isValidEmail(email)) {
+      alert('Please enter a valid email address.');
+      return;
+    }
     // If all validations pass, you can submit the form here
     // form.submit();
     alert('Form submitted successfully!');
