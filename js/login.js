@@ -12,7 +12,7 @@ function myFunction(event){
     login = document.getElementById("login-email").value;
     password = document.getElementById("login-password").value;
     if(login === 'hardcorecoders@gmail.com' && password === 'hello123'){
-        window.location = "/solesphere.html"  
+        window.location = "/xzist.html"  
     }
     else{
         // Code for wrong email password
