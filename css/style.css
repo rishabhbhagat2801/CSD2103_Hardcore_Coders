@@ -134,3 +134,45 @@ body {
   .header .share {
     text-align: center;
   }
+  .header .share a {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #444;
+    background: #fff;
+    margin: 0 .3rem;
+  }
+  
+  .header .share a:hover {
+    background: #444;
+    color: #fff;
+  }
+  
+  .header .credit {
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    margin-top: 3rem;
+    line-height: 1.5;
+  }
+  
+  #menu-btn {
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    background: #ed2d34;
+    color: #fff;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    z-index: 1100;
+    text-align: center;
+  }
+  
+  #menu-btn.fa-times {
+    top: 1rem;
+    left: 24rem;
+  }
