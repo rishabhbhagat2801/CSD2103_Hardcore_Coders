@@ -129,3 +129,12 @@ menu.onclick = () =>{
       });
     };
   });
+
+  document.querySelectorAll('.products-preview-container .product-preview .fa-times').forEach(close =>{
+    close.onclick = () =>{
+      productPreviewContainer.classList.remove('active');
+      prodcutPreview.forEach(closePreview =>{
+        closePreview.style.display = 'none';
+      });
+    };
+  });
