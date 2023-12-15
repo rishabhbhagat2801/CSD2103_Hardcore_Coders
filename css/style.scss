@@ -14,3 +14,29 @@ $black:#444;
 $white:#fff;
 $light-color:#666;
 $border:.2rem solid $black;
+
+@mixin grid($val) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+    gap:2rem;
+ }
+ 
+ @mixin flex($align) {
+    display: flex;
+    align-items: $align;
+    flex-wrap: wrap;
+    gap:3rem;
+ }
+ 
+ @mixin titleText($titleSize) {
+    font-size: $titleSize;
+    color:$black;
+    text-transform: capitalize;
+ }
+ 
+ @mixin graphText($graphSize) {
+    font-size: $graphSize;
+    color:$light-color;
+    line-height: 2;
+    padding:1rem 0;
+ }
