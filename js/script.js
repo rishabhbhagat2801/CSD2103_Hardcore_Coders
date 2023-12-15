@@ -99,3 +99,33 @@ const displayProducts = () =>{
   }
 }
 displayProducts()
+
+menu.onclick = () =>{
+    menu.classList.toggle('fa-times');
+    header.classList.toggle('active');
+    document.body.classList.toggle('active');
+  };
+  
+  window.onscroll = () =>{
+    if(window.innerWidth < 1200){
+      menu.classList.remove('fa-times');
+      header.classList.remove('active');
+      document.body.classList.remove('active');
+    };
+  };
+  
+  let productPreviewContainer = document.querySelector('.products-preview-container');
+  let prodcutPreview = productPreviewContainer.querySelectorAll('.product-preview');
+  
+  document.querySelectorAll('.products .slide .btn').forEach(detailBtn =>{
+    detailBtn.onclick = () =>{
+      productPreviewContainer.classList.add('active');
+      let name = detailBtn.getAttribute('data-product');
+      prodcutPreview.forEach(preview =>{
+        let target = preview.getAttribute('data-target');
+        if(name == target){
+         preview.style.display = 'flex';
+        };
+      });
+    };
+  });
