@@ -31,3 +31,27 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-thumb {
   background: #ed2d34;
 }
+body {
+    background: url(../images/bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  body.active {
+    padding-left: 30rem;
+  }
+  
+  section {
+    padding: 5rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 4rem;
+    color: #444;
+    text-transform: capitalize;
+    margin-bottom: 3rem;
+  }
