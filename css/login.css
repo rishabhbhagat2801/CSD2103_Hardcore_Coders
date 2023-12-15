@@ -70,3 +70,12 @@ body {
 	transform: translateX(0);
 	transition: all .3s ease-out;
 }
+.form-wrapper.is-active .switcher-login {
+	color: black;
+	transform: translateX(90px);
+}
+
+.form-wrapper.is-active .switcher-signup {
+	color: black;
+	transform: translateX(-90px);
+}
