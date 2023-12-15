@@ -268,3 +268,89 @@ body {
     background: rgba(0, 0, 0, 0.8);
     display: none;
   }
+  .products-preview-container.active{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .products-preview-container .product-preview {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 3rem;
+    background: #fff;
+    padding: 2rem 3rem;
+    border-radius: .5rem;
+    position: relative;
+    display: none;
+  }
+  
+  .products-preview-container .product-preview .fa-times {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 4rem;
+    cursor: pointer;
+    color: #666;
+  }
+  
+  .products-preview-container .product-preview .fa-times:hover {
+    color: #ed2d34;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  
+  .products-preview-container .product-preview .image {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 40rem;
+            flex: 1 1 40rem;
+  }
+  
+  .products-preview-container .product-preview .image img {
+    width: 100%;
+  }
+  
+  .products-preview-container .product-preview .content {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 40rem;
+            flex: 1 1 40rem;
+  }
+  
+  .products-preview-container .product-preview .content h3 {
+    font-size: 3rem;
+    color: #444;
+    text-transform: capitalize;
+  }
+  
+  .products-preview-container .product-preview .content p {
+    font-size: 1.5rem;
+    color: #666;
+    line-height: 2;
+    padding: 1rem 0;
+  }
+  
+  .products-preview-container .product-preview .content .stars {
+    padding: 1rem 0;
+    font-size: 1.7rem;
+  }
+  
+  .products-preview-container .product-preview .content .stars i {
+    color: #ed2d34;
+  }
+  
+  .products-preview-container .product-preview .content .stars span {
+    color: #666;
+  }
+  
+  .products-preview-container .product-preview .content .price {
+    font-size: 3rem;
+    color: #444;
+    text-transform: capitalize;
+    padding: 1rem 0;
+  }
