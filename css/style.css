@@ -105,3 +105,32 @@ body {
     padding: 2rem;
     z-index: 1000;
   }
+  .header.active {
+    left: 0;
+  }
+  
+  .header .logo {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: bolder;
+  }
+  
+  .header .navbar {
+    padding: 30% 0;
+  }
+  
+  .header .navbar a {
+    display: block;
+    margin: 2rem 0;
+    font-size: 2rem;
+    color: #fff;
+  }
+  
+  .header .navbar a:hover {
+    text-decoration: underline;
+    text-underline-offset: .7rem;
+  }
+  
+  .header .share {
+    text-align: center;
+  }
