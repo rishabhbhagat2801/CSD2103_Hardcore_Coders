@@ -346,3 +346,32 @@ $border:.2rem solid $black;
        }
     }
  }
+
+ .reviews{
+
+    .slide{
+       text-align: center;
+       padding:2rem;
+ 
+       i{
+          font-size: 4rem;
+          color:$light-color;
+          margin-bottom: 1rem
+       }
+ 
+       p{
+          @include graphText(1.5rem);
+       }
+ 
+       img{
+          height: 7rem;
+          width: 7rem;
+          border-radius: 50%;
+          margin: 1rem 0;
+       }
+ 
+       h3{
+          @include titleText(1.7rem);
+       }
+    }
+ }
