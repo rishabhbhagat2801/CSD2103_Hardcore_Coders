@@ -225,3 +225,46 @@ body {
   .banner .image img {
     width: 100%;
   }
+  .products .slide {
+    text-align: center;
+  }
+  
+  .products .slide img {
+    height: 25rem;
+    margin: 5rem 0;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  
+  .products .slide h3 {
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    color: #444;
+    text-transform: capitalize;
+    opacity: 0;
+  }
+  
+  .products .slide .btn {
+    opacity: 0;
+  }
+  
+  .products .swiper-slide-active img {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  
+  .products .swiper-slide-active h3, .products .swiper-slide-active .btn {
+    opacity: 1;
+  }
+  
+  .products-preview-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1200;
+    min-height: 100vh;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+  }
