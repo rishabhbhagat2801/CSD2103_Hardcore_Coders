@@ -218,52 +218,37 @@ $border:.2rem solid $black;
     }
  }
  
- #menu-btn{
-    position: fixed;
-    top:2rem; left:2rem;
-    background: $red;
-    color:$white;
-    height: 5rem;
-    width: 5rem;
-    line-height: 5rem;
-    font-size: 2.5rem;
-    cursor: pointer;
-    z-index: 1100;
-    text-align: center;
+ .products{
+
+    .slide{
+       text-align: center;
  
-    &.fa-times{
-       top:1rem; left:24rem;
-    }
- }
- 
- .banner{
-    @include flex(center);
-    flex-wrap: wrap-reverse;
- 
-    .content{
-       flex:1 1 41rem;
- 
-       span{
-          font-size: 2.5rem;
-          color:$red;
+       img{
+          height: 25rem;
+          margin:5rem 0;
+          transform: scale(.5);
        }
  
        h3{
-          @include titleText(4rem);
-          padding-top: 1rem;
+          padding:1rem 0;
+          @include titleText(2.5rem);
+          opacity: 0;
        }
  
-       p{
-          padding:1rem 0;
-          @include graphText(1.7rem);
+       .btn{
+          opacity: 0;
        }
     }
  
-    .image{
-       flex:1 1 41rem;
+    .swiper-slide-active{
  
        img{
-          width: 100%;
+          transform: scale(1);
+       }
+ 
+       h3, .btn{
+          opacity: 1;
        }
     }
  }
+ 
