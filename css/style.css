@@ -507,3 +507,33 @@ body {
   .contact .row .contact-info .share a:hover {
     color: #ed2d34;
   }
+  @media (max-width: 1200px) {
+    body.active {
+      padding-left: 0;
+    }
+    header.active {
+      -webkit-box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+              box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+    }
+  }
+  
+  @media (max-width: 991px) {
+    html {
+      font-size: 55%;
+    }
+    section {
+      padding: 3rem 2rem;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    html {
+      font-size: 50%;
+    }
+    .banner .content h3 {
+      font-size: 3rem;
+    }
+    .products .slide img {
+      height: 15rem;
+    }
+  }
