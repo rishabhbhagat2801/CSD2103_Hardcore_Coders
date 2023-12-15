@@ -62,3 +62,40 @@ const addToCart = function(event,productID){
 const saveCart  = () => {
   localStorage.setItem('cart', JSON.stringify(CART))
 }
+
+const displayProducts = () =>{
+    const slider = document.querySelector(".swiper-wrapper")
+    const proPreview = document.querySelector(".products-preview-container")
+    let index = 1;
+    for(const product of PRODUCTS){
+      slider.innerHTML += `<div class="swiper-slide slide">
+      <img src="${product.img}" alt="" />
+      <h3>${product.name}</h3>
+      <div class="btn" data-product="product-${index}">see details</div>
+    </div>`
+    proPreview.innerHTML += `<section class="product-preview" data-target="product-${index}">
+    <div class="fas fa-times"></div>
+    <div class="image">
+      <img src="${product.img}" alt="" />
+    </div>
+    <div class="content">
+      <h3>${product.name}</h3>
+      <p>
+        ${product.description}
+      </p>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <span>( 250 )</span>
+      </div>
+      <div class="price">$${product.price}</div>
+      <a href="#" class="btn" onClick="addToCart(event,${index})">Add to cart</a>
+    </div>
+  </section>`;
+  index++;
+  }
+}
+displayProducts()
