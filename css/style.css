@@ -55,3 +55,25 @@ body {
     text-transform: capitalize;
     margin-bottom: 3rem;
   }
+  .heading span {
+    color: #ed2d34;
+  }
+  
+  .btn {
+    margin-top: 1rem;
+    display: inline-block;
+    border-radius: 5rem;
+    padding: 1.2rem 3rem;
+    border: 0.2rem solid #444;
+    cursor: pointer;
+    background: none;
+    color: #444;
+    font-size: 2rem;
+    text-transform: capitalize;
+  }
+  
+  .btn:hover {
+    border-color: #ed2d34;
+    color: #fff;
+    background: #ed2d34;
+  }
