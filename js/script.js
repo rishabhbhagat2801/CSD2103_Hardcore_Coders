@@ -197,6 +197,18 @@ document.addEventListener("DOMContentLoaded", function() {
       alert('Please enter a valid email address.');
       return;
     }
+
+    if (contact === '') {
+      alert('Please enter your contact number.');
+      return;
+    }
+
+    // Basic phone number validation
+    if (!isValidPhoneNumber(contact)) {
+      alert('Please enter a valid phone number.');
+      return;
+    }
+    
     // If all validations pass, you can submit the form here
     // form.submit();
     alert('Form submitted successfully!');
