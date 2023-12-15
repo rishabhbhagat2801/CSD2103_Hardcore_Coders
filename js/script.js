@@ -213,10 +213,21 @@ document.addEventListener("DOMContentLoaded", function() {
       alert('Please enter your message.');
       return;
     }
-    
+
     // If all validations pass, you can submit the form here
     // form.submit();
     alert('Form submitted successfully!');
   });
 
+   // Function to validate email format
+   function isValidEmail(email) {
+    const emailRegex = /\S+@\S+\.\S+/;
+    return emailRegex.test(email);
+  }
+
+  // Function to validate phone number format
+  function isValidPhoneNumber(phone) {
+    const phoneRegex = /^\d{10}$/; //10-digit phone number format
+    return phoneRegex.test(phone);
+  }
 });
