@@ -11,7 +11,7 @@ function myFunction(event){
     event.preventDefault();
     login = document.getElementById("login-email").value;
     password = document.getElementById("login-password").value;
-    if(login === 'aatman@gmail.com' && password === 'hello123'){
+    if(login === 'hardcorecoders@gmail.com' && password === 'hello123'){
         window.location = "/solesphere.html"  
     }
     else{
