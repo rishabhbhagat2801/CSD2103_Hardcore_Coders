@@ -51,3 +51,14 @@ const PRODUCTS = [
     price:100.99
   }
 ]
+const CART = []
+
+const addToCart = function(event,productID){
+  event.preventDefault()
+  CART.push(PRODUCTS[--productID]);
+  saveCart()
+}
+
+const saveCart  = () => {
+  localStorage.setItem('cart', JSON.stringify(CART))
+}
